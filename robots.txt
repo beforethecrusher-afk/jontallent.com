@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jontallent.com/sitemap.xml
