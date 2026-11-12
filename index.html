@@ -78,7 +78,9 @@
 
   /* between deals */
   .otc{background:var(--bg2)}
-  .trio{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .trio{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .trio .item{grid-column:span 2}
+  .trio .item:nth-child(n+4){grid-column:span 3}
   .item{background:var(--bg2);padding:44px 30px 40px}
   .item svg{width:34px;height:34px;stroke:var(--amber);fill:none;stroke-width:1.1;margin-bottom:34px}
   .item h4{font-family:"Cormorant",serif;font-weight:400;font-size:30px;margin-bottom:10px}
@@ -107,6 +109,8 @@
     .venture{grid-template-columns:1fr;gap:6px;padding:34px 0}
     .venture .go{margin-top:14px}
     .trio{grid-template-columns:1fr 1fr}
+    .trio .item,.trio .item:nth-child(n+4){grid-column:span 1}
+    .trio .item:last-child{grid-column:span 2}
     .hero .scene{width:100%;height:62%;opacity:.2}
     .hero .scene.portrait{width:100%;right:0;height:70%;opacity:.4}
     .hero::after{background:radial-gradient(ellipse 30% 14% at 62% 12%,rgba(8,6,5,.78) 0%,rgba(8,6,5,.5) 45%,rgba(8,6,5,0) 100%)}
@@ -213,6 +217,11 @@
         <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 4c1.5 4.5 6.5 7.5 6.5 13.5a6.5 6.5 0 0 1-13 0c0-3.4 1.8-5.6 3.4-7.2.2 2.4 1.2 3.8 2.6 4.4C16 11 15.6 7.6 17 4z"/><path d="M6 29h22M9 25.5h16"/></svg>
         <h4>Beef &amp; BBQ</h4>
         <p>Smoked low and slow or seared hot and fast — at my own grill or a great steakhouse.</p>
+      </div>
+      <div class="item r">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 9c-3-2.2-7.5-2.8-12-2v18c4.5-.8 9-.2 12 2 3-2.2 7.5-2.8 12-2V7c-4.5-.8-9-.2-12 2z"/><path d="M17 9v18"/></svg>
+        <h4>The Library</h4>
+        <p>Always a student. Every edge starts with knowing something others don't.</p>
       </div>
     </div>
   </div>
